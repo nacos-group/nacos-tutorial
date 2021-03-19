@@ -1,6 +1,6 @@
 # Nacos 部署文档
 
-![Nacos](https://github.com/alibaba/nacos/blob/develop/doc/Nacos_Logo.png)
+![Nacos](https://github.com/alibaba/nacos/blob/develop/doc/Nacos_Logo.png?raw=true)
 
 欢迎来到 Nacos 的世界！
 
@@ -14,6 +14,8 @@ Nacos 帮助您更敏捷和容易地构建、交付和管理微服务平台。 N
 ## 0. 依赖说明
 
 使用Nacos前，需要在运行环境中安装Java(x64) 8～11版本。
+
+本实验环境已经安装完成。
 
 ## 1. 下载并安装Nacos服务端
 
