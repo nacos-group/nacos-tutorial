@@ -37,13 +37,13 @@ tar -zxvf nacos-server-2.0.0-tutorial.tar.gz
 
 ## 2 修改Nacos配置
 
-使用下列命令进入配置编辑界面，变更其中`server.port`配置为65000，并保存。
+使用下列命令进入配置编辑界面，变更其中`server.port`配置为60000，并保存。
 
 ```
 edit nacos/conf/application.properties
 ```
 
-**注意** 该端口您可以随意修改，但只有修改为65000时可以在实验中访问控制台。
+**注意** 该端口您可以随意修改，但只有修改为60000时可以在实验中访问控制台。
 
 
 ## 3. 启动Nacos服务端
@@ -66,12 +66,12 @@ tail -f logs/start.out
 使用
 
 ```
-curl localhost:65000/nacos/v1/ns/health/server
+curl localhost:60000/nacos/v1/ns/health/server
 ```
 
 也能够获得反馈～
 
-接下来可以进入到<tutorial-web-preview port="65000" path="/nacos/#/login">Nacos控制台</tutorial-web-preview> 进行查看和操作。
+接下来可以进入到<tutorial-web-preview port="60000" path="/nacos/#/login">Nacos控制台</tutorial-web-preview> 进行查看和操作。
 
 ## 5. 部署完成
 
