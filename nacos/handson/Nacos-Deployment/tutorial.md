@@ -71,7 +71,7 @@ curl localhost:60000/nacos/v1/ns/health/server
 
 也能够获得反馈～
 
-接下来可以进入到<tutorial-web-preview port="60000" path="/nacos/#/login">Nacos控制台</tutorial-web-preview> 进行查看和操作。
+接下来可以进入到<tutorial-web-preview port="60000" path="/nacos/#/login">Nacos控制台</tutorial-web-preview> 进行查看和操作(默认用户名密码均为nacos）。
 
 ## 5. 部署完成
 
