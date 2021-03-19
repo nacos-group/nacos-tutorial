@@ -33,7 +33,18 @@ curl -OL https://handson.oss-cn-shanghai.aliyuncs.com/nacos-server-2.0.0-tutoria
 tar -zxvf nacos-server-2.0.0-tutorial.tar.gz
 ```
 
-## 2. 启动Nacos服务端
+## 2 修改Nacos配置
+
+使用下列命令进入配置编辑界面，变更其中`server.port`配置为65000，并保存。
+
+```
+edit nacos/conf/application.properties
+```
+
+**注意** 该端口您可以随意修改，但只有修改为65000时可以在实验中访问控制台。
+
+
+## 3. 启动Nacos服务端
 
 进入解压后的Nacos目录，然后使用下列命令即可启动一个单例模式的Nacos服务端。
 
@@ -42,7 +53,7 @@ cd nacos
 bin/startup.sh -m standalone
 ```
 
-## 3. 查看启动成功
+## 4. 查看启动成功
 
 ```
 tail -f logs/start.out
@@ -53,7 +64,17 @@ tail -f logs/start.out
 使用
 
 ```
-curl localhost:8848/nacos/v1/ns/health/server
+curl localhost:65000/nacos/v1/ns/health/server
 ```
 
 也能够获得反馈～
+
+接下来可以进入到<tutorial-web-preview port="65000" path="/nacos/#/login">Nacos控制台</tutorial-web-preview> 进行查看和操作。
+
+## 5. 部署完成
+
+完成上述步骤后，nacos已经部署完成。您可以查看更多官方文档来获取更多部署Nacos的相关信息
+
+- [Nacos部署手册](https://nacos.io/zh-cn/docs/deployment.html)
+- [集群部署说明](https://nacos.io/zh-cn/docs/cluster-mode-quick-start.html)
+- [Nacos 系统参数介绍](https://nacos.io/zh-cn/docs/system-configurations.html)
