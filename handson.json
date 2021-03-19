@@ -1,0 +1,17 @@
+{
+  "directory": [
+    {
+      "folderName": "Nacos-Deployment",
+      "title": "Nacos 部署教程"
+    },
+    {
+      "folderName": "Nacos-Config-Basic",
+      "title": "Nacos 配置中心入门"
+    },
+    {
+      "folderName": "Nacos-Naming-Basic",
+      "title": "Nacos 服务发现入门"
+    }
+  ],
+  "scenario_root": "nacos/handson"
+}
